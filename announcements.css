@@ -1,0 +1,112 @@
+.navbar ul{
+    list-style: none;
+    display:inline-flex;
+    gap: 30px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: yellowgreen;
+    transition: color 0.3s;
+}
+
+.navbar a:hover{
+    color:green;
+}
+
+.header{
+    display:flex;
+}
+
+/* Page Title */
+.container h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Forms Section */
+.card h3 {
+    margin-top: 0;
+    color: #1aff8c;
+}
+
+/* Improve Form Layout */
+.card input,
+.card textarea {
+    margin-bottom: 15px;
+}
+
+/* Divider */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #1aff8c, transparent);
+}
+
+/* Published Section */
+#feed {
+    margin-top: 30px;
+}
+
+/* Announcement & Event Cards */
+#feed .card {
+    background: #12261d;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#feed .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(26, 255, 140, 0.2);
+}
+
+/* Type Badge */
+#feed .card strong {
+    display: inline-block;
+    background: #1aff8c;
+    color: black;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* Event Date Styling */
+.event-date {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Status Badges */
+.status-upcoming {
+    color: #1aff8c;
+    font-weight: bold;
+}
+
+.status-past {
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+/* Posted Date */
+.post-time {
+    font-size: 12px;
+    color: #888;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .container h1 {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,160 @@
+.navbar ul{
+    list-style: none;
+    display:inline-flex;
+    gap: 30px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: yellowgreen;
+    transition: color 0.3s;
+}
+
+.navbar a:hover{
+    color:green;
+}
+
+.header{
+    display:flex;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f1220;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Campus Gossip & Confessions</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #0e1a14;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #1aff8c;
+}
+
+/* Form */
+.form-container {
+    background: #14251c;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+textarea, select, input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #1c3327;
+    border: 1px solid #2d5a44;
+    color: white;
+    border-radius: 8px;
+}
+
+button {
+    background: #1aff8c;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #12cc6f;
+}
+
+/* Filters */
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    margin: 5px;
+}
+
+/* Feed */
+.feed {
+    display: grid;
+    gap: 20px;
+}
+
+.card {
+    background: #14251c;
+    padding: 15px;
+    border-radius: 12px;
+    position: relative;
+    border-left: 5px solid #1aff8c;
+}
+
+.pinned {
+    border-left: 5px solid gold;
+}
+
+.category {
+    background: #1aff8c;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.card audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.reactions {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.action-btn {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.comment-box {
+    margin-top: 10px;
+}
+
+.comment-box input {
+    width: 80%;
+    padding: 5px;
+}
+
+.comment {
+    font-size: 13px;
+    color: #b5ffd8;
+}
+
+.timestamp {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 8px;
+}

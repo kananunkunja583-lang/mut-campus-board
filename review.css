@@ -1,0 +1,122 @@
+.navbar ul{
+    list-style: none;
+    display:inline-flex;
+    gap: 30px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: yellowgreen;
+    transition: color 0.3s;
+}
+
+.navbar a:hover{
+    color:green;
+}
+
+.header{
+    display:flex;
+}
+
+body{
+    background:#0d0f18;
+    color:white;
+    font-family:Arial;
+    padding:20px;
+}
+
+h1,h2{
+    color:green;
+}
+
+.review-form{
+    background:rgb(210, 236, 170);
+    padding:20px;
+    border-radius:8px;
+    margin-bottom:25px;
+}
+
+textarea, select, input{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    background:white;
+    border:none;
+    color:black;
+    border-radius:6px;
+}
+
+button{
+    margin-top:10px;
+    padding:10px;
+    width:100%;
+    border:none;
+    background:green;
+    border-radius:6px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.stars span{
+    font-size:25px;
+    cursor:pointer;
+    color:gray;
+}
+
+.stars span.active{
+    color:gold;
+}
+
+.card{
+    background:#171b2b;
+    padding:15px;
+    border-radius:8px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#7c5cff;
+}
+
+.video-block {
+    background: #f9f7f3;;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.video-block h2 {
+    grid-column: 1 / -1; /* Make title span full width */
+    color: green;
+    margin-bottom: 10px;
+}
+
+.video-item {
+    background: #f9f7f3;;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.video-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(124, 92, 255, 0.5);
+}
+
+.video-item video,
+.video-item iframe {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Make YouTube keep correct ratio */
+.video-item iframe {
+    aspect-ratio: 16 / 9;
+}
+

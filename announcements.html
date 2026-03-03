@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Announcements & Events</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="announcements.css">
+</head>
+<body>
+<div class="header">
+            <div><img src="photos/MUT-LOGO-2.jpg" alt="MUT logo" width="300" height="auto"></div>
+            <div><nav class="navbar">
+       <div> 
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="announcements.html">Announcements/Events</a></li>
+            <li><a href="marketing.html">Marketing</a></li>
+            <li><a href="review.html">Reviews</a></li>
+            <li><a href="gossiptea.html">Gossiptea & Confessions</a></li>
+            <li><a href="admin.html">Admins Only</a></li>
+        </ul>
+        </div>
+        </nav>
+        </div>
+        </div>
+
+<div class="container">
+
+    <h1 style="color:#1aff8c;">📢 Announcements & Events</h1>
+
+    <!-- Announcement Form -->
+    <div class="card">
+        <h3>Create Announcement</h3>
+        <input type="text" id="aTitle" placeholder="Announcement Title">
+        <textarea id="aContent" placeholder="Announcement Details"></textarea>
+        <button onclick="addAnnouncement()">Post Announcement</button>
+    </div>
+
+    <!-- Event Form -->
+    <div class="card">
+        <h3>Create Event</h3>
+        <input type="text" id="eTitle" placeholder="Event Title">
+        <input type="date" id="eDate">
+        <textarea id="eContent" placeholder="Event Description"></textarea>
+        <button onclick="addEvent()">Post Event</button>
+    </div>
+
+    <hr style="border:1px solid #1aff8c; margin:40px 0;">
+
+    <h2 style="color:#1aff8c;">Published Posts</h2>
+    <div id="feed"></div>
+
+</div>
+
+<footer>© 2026 CampusConnect</footer>
+
+<script src="announcements.js"></script>
+</body>
+</html>

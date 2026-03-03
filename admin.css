@@ -1,0 +1,133 @@
+body {
+    background: #f9f7f3;
+    color: #e8e8e8;
+    font-family: Arial;
+    padding: 20px;
+}
+ .navbar ul{
+    list-style: none;
+    display:inline-flex;
+    gap: 30px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: yellowgreen;
+    transition: color 0.3s;
+}
+
+.navbar a:hover{
+    color:green;
+}
+.header{
+    display:flex;
+}
+h1, h2 {
+    color: green;
+}
+
+form, table {
+    background: rgb(210, 236, 170);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+input, textarea, select {
+    width: 100%;
+    background: white;
+    border: none;
+    padding: 10px;
+    margin-top: 7px;
+    border-radius: 6px;
+    color: black;
+}
+
+button {
+    background: green;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: green;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+td, th {
+    padding: 10px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgb(210, 236, 170);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background: black;
+    padding: 20px;
+    border-radius: 8px;
+    width: 350px;
+}
+.status-badge {
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.status-pending { background: orange; }
+.status-approved { background: green; }
+.status-rejected { background: red; }
+
+td[contenteditable="true"]{
+    background: rgb(210, 236, 170);
+    cursor: text;
+}
+
+#dataTable{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color:black;
+}
+
+#dataTable,
+#dataTable th,
+#dataTable td{
+    border: 1px solid white;
+}
+
+#dataTable th{
+    padding: 12px;
+    background: rgb(210, 236, 170);
+    text-align: left;
+    font-weight: bold;
+}
+
+#dataTable td{
+    padding: 12px;
+    background:rgb(210, 236, 170);
+}
+
+td[contenteditable="true"]:hover{
+    background: rgb(210, 236, 170);#2a3150;
+}
+
+td[contenteditable="true"]:focus{
+    outline: none;
+    background: rgb(210, 236, 170);
+    box-shadow: inset 0 0 5px greenyellow;
+}

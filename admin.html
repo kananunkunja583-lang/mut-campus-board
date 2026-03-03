@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div class="header">
+            <div><img src="photos/MUT-LOGO-2.jpg" alt="MUT logo" width="300" height="auto"></div>
+            <div><nav class="navbar">
+       <div> 
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="announcements.html">Announcements/Events</a></li>
+            <li><a href="marketing.html">Marketing</a></li>
+            <li><a href="review.html">Reviews</a></li>
+            <li><a href="gossiptea.html">Gossiptea & Confessions</a></li>
+            <li><a href="admin.html">Admins Only</a></li>
+        </ul>
+        </div>
+        </nav>
+        </div>
+        </div>
+<h1>Admin Control Panel</h1>
+
+<section id="announcementFormSection">
+    <h2>Add Announcement</h2>
+    <form id="announcementForm">
+        <input type="text" id="aTitle" placeholder="Title" required>
+        <select id="aCategory">
+            <option>Academics</option>
+            <option>Clubs & Societies</option>
+            <option>Lost & Found</option>
+            <option>Opportunities</option>
+            <option>Housing</option>
+            <option>General Info</option>
+            <option>Scholarships</option>
+            <option>Internship/Work</option>
+            <option>Student Union</option>
+            <option>Exams & Deadlines</option>
+        </select>
+        <textarea id="aDesc" placeholder="Description" rows="3"></textarea>
+        <button type="submit">Add Announcement</button>
+    </form>
+</section>
+
+<section id="eventsFormSection">
+    <h2>Add Event</h2>
+    <form id="eventForm">
+        <input type="text" id="eTitle" placeholder="Event Title" required>
+        <select id="eCategory">
+            <option>Parties & Nightlife</option>
+            <option>Sports & Games</option>
+            <option>Academic Events</option>
+            <option>Competitions</option>
+            <option>Religious Events</option>
+            <option>Club Meetings</option>
+            <option>Concerts & Arts</option>
+            <option>Seminars & Workshops</option>
+            <option>Freshers' Events</option>
+            <option>Career/Job Fairs</option>
+        </select>
+        <input type="date" id="eDate">
+        <input type="text" id="eVenue" placeholder="Venue" required>
+        <textarea id="eDesc" placeholder="Description" rows="3"></textarea>
+        <button type="submit">Add Event</button>
+    </form>
+</section>
+
+<h2>Manage Posts</h2>
+
+<table id="dataTable">
+    <thead>
+        <tr>
+            <th>Type</th>
+            <th>Title</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+         <tr>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td><button onclick="saveRow(this)">Save</button></td>
+        </tr>
+        <tr>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td><button onclick="saveRow(this)">Save</button></td>
+        </tr>
+        <tr>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td><button onclick="saveRow(this)">Save</button></td>
+        </tr>
+        <tr>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td><button onclick="saveRow(this)">Save</button></td>
+        </tr>
+        <tr>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td><button onclick="saveRow(this)">Save</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- EDIT MODAL -->
+<div id="editModal" class="modal">
+  <div class="modal-content">
+    <h3>Edit Item</h3>
+    <input type="text" id="editTitle">
+    <textarea id="editDesc" rows="3"></textarea>
+    <input type="text" id="editVenue">
+    <input type="date" id="editDate">
+    <button id="saveEdit">Save Changes</button>
+    <button id="closeModal">Close</button>
+  </div>
+</div>
+<div class="container">
+<h1 style="color:#1aff8c;">Admin Panel</h1>
+
+<input type="password" id="password" placeholder="Enter admin password">
+<button onclick="login()">Login</button>
+
+<div id="adminArea"></div>
+<script src="js/storage.js"></script>
+<script src="js/admin.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Panel — Announcements & Events</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="marketing.css"
+</head>
+<body>
+     <div class="header">
+            <div><img src="photos/MUT-LOGO-2.jpg" alt="MUT logo" width="300" height="auto"></div>
+            <div><nav class="navbar">
+       <div> 
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="announcements.html">Announcements/Events</a></li>
+            <li><a href="marketing.html">Marketing</a></li>
+            <li><a href="review.html">Reviews</a></li>
+            <li><a href="gossiptea.html">Gossiptea & Confessions</a></li>
+            <li><a href="admin.html">Admins Only</a></li>
+
+        </ul>
+        </div>
+        </nav>
+        </div>
+        </div>
+
+<h1>🌿 Campus Marketing Hub</h1>
+
+<div class="form-container">
+    <input type="text" id="bizName" placeholder="Business Name">
+    
+    <select id="bizCategory">
+        <option value="Food">Food 🍔</option>
+        <option value="Fashion">Fashion 👕</option>
+        <option value="Tech">Tech 💻</option>
+        <option value="Services">Services 🛠</option>
+        <option value="Events">Events 🎉</option>
+    </select>
+
+    <textarea id="bizDesc" placeholder="Business Description"></textarea>
+
+    <input type="text" id="bizContact" placeholder="Contact Info (Phone / IG / Email)">
+
+    <input type="file" id="bizImage" accept="image/*">
+
+    <button onclick="addBusiness()">Submit Business</button>
+</div>
+
+<div class="filter-buttons">
+    <button onclick="filterBiz('All')">All</button>
+    <button onclick="filterBiz('Food')">Food</button>
+    <button onclick="filterBiz('Fashion')">Fashion</button>
+    <button onclick="filterBiz('Tech')">Tech</button>
+    <button onclick="filterBiz('Services')">Services</button>
+    <button onclick="filterBiz('Events')">Events</button>
+</div>
+
+<div class="market-grid" id="marketGrid"></div>
+
+<footer>© 2026 CampusConnect</footer>
+
+<script src="marketing.js"></script>
+
+</body>
+</html>
+

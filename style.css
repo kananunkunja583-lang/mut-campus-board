@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #0e1a14;
+    color: white;
+    margin: 0;
+}
+
+.navbar ul{
+    list-style: none;
+    display:inline-flex;
+    gap: 30px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: yellowgreen;
+    transition: color 0.3s;
+}
+
+.navbar a:hover{
+    color:green;
+}
+
+.header{
+    display:flex;
+}
+
+
+.container {
+    padding: 40px;
+}
+
+.card {
+    background: #14251c;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border-left: 4px solid #1aff8c;
+}
+
+button {
+    background: #1aff8c;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #12cc6f;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #1c3327;
+    border: 1px solid #2d5a44;
+    color: white;
+    border-radius: 8px;
+}
+
+footer {
+    background: #14251c;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    border-top: 2px solid #1aff8c;
+}

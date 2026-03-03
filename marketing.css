@@ -1,0 +1,129 @@
+.navbar ul{
+    list-style: none;
+    display:inline-flex;
+    gap: 30px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: yellowgreen;
+    transition: color 0.3s;
+}
+
+.navbar a:hover{
+    color:green;
+}
+
+.header{
+    display:flex;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0e1a14;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #1aff8c;
+}
+
+/* Form */
+.form-container {
+    background: #14251c;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #1c3327;
+    border: 1px solid #2d5a44;
+    color: white;
+    border-radius: 8px;
+}
+
+button {
+    background: #1aff8c;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #12cc6f;
+}
+
+/* Filters */
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    margin: 5px;
+}
+
+/* Grid */
+.market-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #14251c;
+    padding: 15px;
+    border-radius: 12px;
+    border-left: 5px solid #1aff8c;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.featured {
+    border-left: 5px solid gold;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.category {
+    background: #1aff8c;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.timestamp {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 8px;
+}

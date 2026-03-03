@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>MUT CAMPUS BOARD</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="gossiptea.css">
+    </head>
+    <body style="background-color: #f9f7f3;">
+        <div class="header">
+            <div><img src="photos/MUT-LOGO-2.jpg" alt="MUT logo" width="300" height="auto"></div>
+            <div><nav class="navbar">
+       <div> 
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="announcements.html">Announcements/Events</a></li>
+            <li><a href="marketing.html">Marketing</a></li>
+            <li><a href="review.html">Reviews</a></li>
+            <li><a href="gossiptea.html">Gossiptea & Confessions</a></li>
+            <li><a href="admin.html">Admins Only</a></li>
+
+        </ul>
+        </div>
+    </nav>
+    </div>
+        </div>
+        
+<h1>🌿 Campus Gossip & Confessions</h1>
+
+<div class="form-container">
+    <textarea id="confessionText" placeholder="Write your confession..."></textarea>
+
+    <select id="category">
+        <option value="Crush">Crush 👀</option>
+        <option value="Funny">Funny 😂</option>
+        <option value="Rant">Rant 😤</option>
+        <option value="Serious">Serious 💭</option>
+    </select>
+
+    <input type="file" id="imageUpload" accept="image/*">
+    <input type="file" id="audioUpload" accept="audio/*">
+
+    <button onclick="addConfession()">Post Anonymously</button>
+</div>
+
+<div class="filter-buttons">
+    <button onclick="filterPosts('All')">All</button>
+    <button onclick="filterPosts('Crush')">Crush</button>
+    <button onclick="filterPosts('Funny')">Funny</button>
+    <button onclick="filterPosts('Rant')">Rant</button>
+    <button onclick="filterPosts('Serious')">Serious</button>
+</div>
+
+<div class="feed" id="feed"></div>
+<footer>© 2026 mutcampusboard</footer>
+<script src="gossiptea.js"></script>
+</body>
+</html>

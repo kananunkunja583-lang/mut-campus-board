@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>MUT CAMPUS BOARD</title>
+        <link rel="stylesheet" href="review.css">
+    </head>
+    <body style="background-color: #f9f7f3;">
+        <div class="header">
+            <div><img src="photos/MUT-LOGO-2.jpg" alt="MUT logo" width="300" height="auto"></div>
+            <div><nav class="navbar">
+       <div> 
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="announcements.html">Announcements/Events</a></li>
+            <li><a href="marketing.html">Marketing</a></li>
+            <li><a href="review.html">Reviews</a></li>
+            <li><a href="gossiptea.html">Gossiptea & Confessions</a></li>
+            <li><a href="admin.html">Admins Only</a></li>
+        </ul>
+        </div>
+    </nav>
+    </div>
+        </div>
+
+        <h1>Campus Reviews</h1>
+
+<section class="review-form">
+    <h2>Submit a Review</h2>
+
+    <select id="category">
+        <option>Hostels</option>
+        <option>Lecturers</option>
+        <option>Cafeteria</option>
+        <option>Library</option>
+        <option>Clubs</option>
+        <option>Campus Events</option>
+    </select>
+
+    <!-- Star Rating -->
+    <div class="stars" id="stars">
+        <span onclick="rate(1)">★</span>
+        <span onclick="rate(2)">★</span>
+        <span onclick="rate(3)">★</span>
+        <span onclick="rate(4)">★</span>
+        <span onclick="rate(5)">★</span>
+    </div>
+
+    <textarea id="reviewText" placeholder="Write your review..."></textarea>
+    <input type="file" id="media" accept="image/*,video/*,audio/*">
+    <button onclick="addReview()">Submit Review</button>
+</section>
+
+<section class="filter">
+    <select id="filterCategory" onchange="displayReviews()">
+        <option value="All">All Categories</option>
+        <option>Hostels</option>
+        <option>Lecturers</option>
+        <option>Cafeteria</option>
+        <option>Library</option>
+        <option>Clubs</option>
+        <option>Campus Events</option>
+    </select>
+</section>
+
+<section class="media-section">
+<div class="video-block">
+    <h2>Video Review</h2>
+   <div class="video-item"><video width="600" controls>
+        <source src="PHOTOS/video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+   </div>
+    <div class="video-item"><video width="600" controls>
+        <source src="PHOTOS/video2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    </div>
+     <div class="video-item"><iframe width="600" height="340"
+        src="https://www.youtube.com/embed/bTUTruYWDGk"
+        title="YouTube video"
+        frameborder="0"
+        allowfullscreen>
+     </iframe></div>
+</div>
+
+    <h2>Audio Testimonial</h2>
+    <audio controls>
+        <source src="PHOTOS/audio1.mpeg" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</section>
+
+    </body>
+</html>
